@@ -4,10 +4,39 @@
     <meta charset="UTF-8">
     <title>AI-Assisted Code Review Tool</title>
     <style>
-        body { font-family: Arial, sans-serif; }
-        .container { width: 80%; margin: auto; text-align: center; }
-        .button { background-color: #007BFF; color: white; padding: 10px 20px; margin-top: 20px; border: none; border-radius: 5px; cursor: pointer; }
-        .button:hover { background-color: #0056b3; }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/memphis-mini.png'); /* Subtle background pattern */
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            animation: fadeIn 2s ease-out; /* Animation for container */
+        }
+        .button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .container {
+                animation: none;
+            }
+        }
     </style>
 </head>
 <body>
